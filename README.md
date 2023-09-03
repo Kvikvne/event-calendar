@@ -2,9 +2,11 @@
 
 Flight Scheduler and Day Scheduler are two components of a web application designed to help you manage events and appointments efficiently. These components are built with React.js and include various features for organizing your schedule.
 
+For a live demonstration, please visit [Demo Link](https://event-planner-frontend.onrender.com/). Make sure to click "Week" or "Day"!
+
 ## Features
 
-### Flight Scheduler
+### Week Scheduler
 
 - View and manage events on a weekly schedule.
 - Navigate through weeks with previous and next week buttons.
@@ -51,11 +53,6 @@ Contributing
 
 Contributions are welcome! If you have any ideas, enhancements, or bug fixes, feel free to open an issue or create a pull request.
 
-License
--------
-
-This project is licensed under the MIT License - see the [LICENSE](https://chat.openai.com/LICENSE) file for details.
-
 Note: This project is a simplified example and may require further customization and integration into a larger application.
 
-For more details and a live demonstration, please visit [Demo Link](https://event-planner-frontend.onrender.com/schedule/week).
+
