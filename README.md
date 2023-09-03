@@ -56,11 +56,6 @@ License
 
 This project is licensed under the MIT License - see the [LICENSE](https://chat.openai.com/LICENSE) file for details.
 
-Acknowledgments
----------------
+Note: This project is a simplified example and may require further customization and integration into a larger application.
 
-<<<<<<< HEAD
--   Special thanks to the open-source community for providing valuable tools and libraries.
-=======
--   Special thanks to the open-source community for providing valuable tools and libraries.
->>>>>>> a9525286a7e820bc5b8daf55afee174e948f2f5c
+For more details and a live demonstration, please visit [Demo Link](https://event-planner-frontend.onrender.com/schedule/week).
