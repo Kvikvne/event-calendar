@@ -1,6 +1,6 @@
 # Event Planner Fontend Components
 
-Flight Scheduler and Day Scheduler are two components of a web application designed to help you manage events and appointments efficiently. These components are built with React.js and include various features for organizing your schedule.
+Week Scheduler and Day Scheduler are two components of a web application designed to help you manage events and appointments efficiently. These components are built with React.js and include various features for organizing your schedule.
 
 For a live demonstration, please visit [Demo Link](https://event-planner-frontend.onrender.com/). Make sure to click "Week" or "Day"!
 
