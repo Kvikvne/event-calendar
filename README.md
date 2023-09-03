@@ -59,4 +59,8 @@ This project is licensed under the MIT License - see the [LICENSE](https://chat.
 Acknowledgments
 ---------------
 
+<<<<<<< HEAD
 -   Special thanks to the open-source community for providing valuable tools and libraries.
+=======
+-   Special thanks to the open-source community for providing valuable tools and libraries.
+>>>>>>> a9525286a7e820bc5b8daf55afee174e948f2f5c
