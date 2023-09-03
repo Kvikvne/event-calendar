@@ -11,6 +11,7 @@ function App(props) {
       <div className="">
         
         <Routes>
+          <Route path="/" element={<FlightScheduler />} />
           <Route path="/schedule/week" element={<FlightScheduler />} />
           <Route path="/schedule/day" element={<DayScheduler />} />
         </Routes>
