@@ -65,20 +65,23 @@ function Modal({ isOpen, onClose, onSubmit }) {
     <>
       {isOpen && (
         <div className="modal fixed inset-0 flex items-center justify-center z-50 ">
-          <div className="modal-content bg-slate-50 border animate-fade-in p-2 rounded p-5">
-            <span
-              className="close text-2xl text-black hover:text-red-500 cursor-pointer"
-              onClick={onClose}
-            >
-              &times;
-            </span>
-            <h1 className="font-bold text-lg">New Instructor Avalibility</h1>
-            <h2 className="mt-1 font-normal">Enter your details</h2>
+          <div className="modal-content bg-white border animate-fade-in  rounded p-5">
+            <div className="w-full flex justify-end">
+              <span
+                className="close text-2xl  text-black hover:text-red-500 cursor-pointer"
+                onClick={onClose}
+              >
+                &times;
+              </span>
+            </div>
+
+            <h1 className="font-bold text-lg text-left">New Event</h1>
+            <h2 className="mt-1 font-norma text-left">Enter your details</h2>
 
             <form onSubmit={handleSubmit}>
               <div className="mt-3">
                 <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                  className="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                   placeholder="Name"
                   type="text"
                   value={title}
@@ -89,7 +92,7 @@ function Modal({ isOpen, onClose, onSubmit }) {
               <div className=" mt-3">
                 <textarea
                   placeholder="Notes"
-                  className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                  className="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                   type="text"
                   value={event}
                   onChange={handleChangeEvent}
@@ -99,7 +102,7 @@ function Modal({ isOpen, onClose, onSubmit }) {
               <div className=" mt-3">
                 <input
                   placeholder="Date"
-                  className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                  className="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                   type="date"
                   value={date}
                   onChange={handleChangeDate}
@@ -112,14 +115,14 @@ function Modal({ isOpen, onClose, onSubmit }) {
                 <label>Start</label>
                 <input
                   label="Start Time"
-                  className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                  className="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                   type="time"
                   value={startTime}
                   onChange={handleChangeStartTime}
                 />
                 <label className="">End</label>
                 <input
-                  className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                  className="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                   label="End Time"
                   type="time"
                   value={endTime}
@@ -127,7 +130,7 @@ function Modal({ isOpen, onClose, onSubmit }) {
                 />
               </div>
 
-              <div className="w-20 flex mx-auto">
+              <div className="w-fit flex mx-auto">
                 <select
                   className="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal text-left outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all border text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200"
                   value={color}
@@ -164,7 +167,10 @@ function Modal({ isOpen, onClose, onSubmit }) {
                 </select>
               </div>
               <div className="flex justify-center">
-                <button type="submit" className="mt-6 border hover:scale-105 duration-500 bg-green-400 text-white font-medium rounded p-2">
+                <button
+                  type="submit"
+                  className="mt-6 border hover:scale-105 duration-500 bg-green-400 text-white font-medium rounded p-2"
+                >
                   Add Avalibility
                 </button>
               </div>

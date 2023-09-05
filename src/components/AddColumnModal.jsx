@@ -29,17 +29,20 @@ function AddColumnModal({ isOpen, onClose, onSubmit, onAddColumn }) {
     <>
       {isOpen && (
         <div className="modal fixed inset-0 flex items-center justify-center z-50 ">
-          <div className="modal-content bg-slate-50 animate-fade-in p-2 rounded p-5">
+          <div className="modal-content bg-white animate-fade-in rounded p-5">
+            <div className="w-full flex justify-end">
             <span
               className="close text-2xl text-black hover:text-red-500 cursor-pointer"
               onClick={handleModalClose}
             >
               &times;
             </span>
-            <h2 variant="h4" color="black">
+            </div>
+            
+            <h2 variant="h4" color="black" className="text-left font-bold">
               New Column
             </h2>
-            <h2 color="gray" className="mt-1 font-normal">
+            <h2 color="gray" className="text-left font-thin">
               Enter a column name.
             </h2>
 
@@ -47,7 +50,7 @@ function AddColumnModal({ isOpen, onClose, onSubmit, onAddColumn }) {
               <div className=" mt-3">
                 <input
                   label="column name"
-                  className=""
+                  className="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                   type="text"
                   value={colName}
                   onChange={handleChangeColName}
@@ -55,7 +58,7 @@ function AddColumnModal({ isOpen, onClose, onSubmit, onAddColumn }) {
               </div>
 
               <div className="flex justify-center">
-                <button type="submit" className="mt-6">
+                <button type="submit" className="mt-6 border hover:scale-105 duration-500 bg-green-400 text-white font-medium rounded p-2">
                   Add Column
                 </button>
               </div>

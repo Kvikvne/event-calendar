@@ -98,7 +98,7 @@ function FlightScheduler() {
     const { event, title, startTime, date, duration, color } = data;
 
     const newEvent = {
-      id: "iNSTRUCTOR" + "_" + "AVALIABILITY" + "_" + uuidv4(),
+      id: "EVENT" + "_" + uuidv4(),
       event,
       title,
       startTime,
@@ -194,7 +194,7 @@ function FlightScheduler() {
 
   return (
     <>
-      <div className="container mx-auto mb-10 pb-5 px-4 pt-2 bg-white rounded">
+      <div className="container mx-auto mb-10 pb-5 px-4 pt-2 bg-gray-50 rounded shadow-xl">
         <div className="main-btn-div ml-1  w-max">
           <div className="date-arrows mt-2 flex justify-between">
             <button

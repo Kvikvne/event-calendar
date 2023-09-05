@@ -9,7 +9,6 @@ function App(props) {
   return (
     <BrowserRouter>
       <div className="">
-        
         <Routes>
           <Route path="/" element={<FlightScheduler />} />
           <Route path="/schedule/week" element={<FlightScheduler />} />

@@ -282,7 +282,7 @@ function DayScheduler() {
 
   return (
     <>
-      <div className="container mx-auto pt-2 my-2 min-h-[700px] pb-5 px-4 bg-white rounded-xl">
+      <div className="container mx-auto pt-2 my-2 min-h-[700px] pb-5 px-4 bg-gray-50 rounded shadow-xl">
         <div className="main-btn-div ml-1 w-max">
           <div className="date-arrows mt-2 flex justify-between">
             <button

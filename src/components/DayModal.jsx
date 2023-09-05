@@ -66,17 +66,20 @@ function DayModal({ isOpen, onClose, onSubmit, colName }) {
     <>
       {isOpen && (
         <div className="modal fixed inset-0 flex items-center justify-center z-50 ">
-          <div className="modal-content bg-slate-50 animate-fade-in p-2 rounded p-5">
+          <div className="modal-content bg-gray-50 animate-fade-in rounded p-5">
+            <div className="w-full flex justify-end">
             <span
               className="close text-2xl text-black hover:text-red-500 cursor-pointer"
               onClick={onClose}
             >
               &times;
             </span>
-            <h1 variant="h4" color="black">
+            </div>
+            
+            <h1 variant="h4" color="black" className="text-left font-bold">
               New Event
             </h1>
-            <h3 color="gray" className="mt-1 font-normal">
+            <h3 color="gray" className="mt-1 text-left font-thin">
               Enter your details and avalibility.
             </h3>
 
@@ -84,6 +87,7 @@ function DayModal({ isOpen, onClose, onSubmit, colName }) {
               <div className="mt-3">
                 <input
                   label="Name"
+                  className="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                   size="lg"
                   type="text"
                   value={title}
@@ -94,7 +98,7 @@ function DayModal({ isOpen, onClose, onSubmit, colName }) {
               <div className=" mt-3">
                 <textarea
                   label="Notes"
-                  className=""
+                  className="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                   type="text"
                   value={event}
                   onChange={handleChangeEvent}
@@ -107,14 +111,14 @@ function DayModal({ isOpen, onClose, onSubmit, colName }) {
               <div className="mb-4 mt-2 flex items-center gap-4">
                 <input
                   label="Start Time"
-                  className=""
+                  className="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                   type="time"
                   value={startTime}
                   onChange={handleChangeStartTime}
                 />
 
                 <input
-                  className=""
+                  className="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                   label="End Time"
                   type="time"
                   value={endTime}
@@ -138,9 +142,9 @@ function DayModal({ isOpen, onClose, onSubmit, colName }) {
                   ))}
                 </select>
               </div>
-              <div className="w-20 flex mx-auto">
+              <div className="w-fit flex mx-auto">
                 <select
-                  className="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal text-left outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all border text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200"
+                  className=" mt-4 peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal text-left outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all border text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200"
                   value={color}
                   onChange={handleChangeColor}
                 >
@@ -174,7 +178,7 @@ function DayModal({ isOpen, onClose, onSubmit, colName }) {
                 </select>
               </div>
               <div className="flex justify-center">
-                <button type="submit" className="mt-6">
+                <button type="submit" className="mt-6 border hover:scale-105 duration-500 bg-green-400 text-white font-medium rounded p-2">
                   Add Avalibility
                 </button>
               </div>
